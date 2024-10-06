@@ -7,14 +7,18 @@
     <style>
         body {
             font-family: 'Arial', sans-serif;
-            background-color: #ffffff; /* White background */
+            background-image: url('BG-image'); /* Path to your image */
+            background-size: cover; /* Ensure the image covers the entire page */
+            background-position: center; /* Center the image */
+            background-attachment: fixed; /* Keep the image fixed when scrolling */
+            background-repeat: no-repeat; /* Prevent the image from repeating */
             color: #333;
             margin: 0;
             padding: 0;
             overflow-x: hidden;
         }
         header {
-            background-color: #008080; /* Teal green header */
+            background-color: rgba(0, 128, 128, 0.7); /* Semi-transparent teal over the background */
             color: #ffffff; /* White text */
             text-align: center;
             padding: 2em 0;
@@ -35,6 +39,8 @@
             width: 80%;
             margin: 0 auto;
             padding: 2em 0;
+            background-color: rgba(255, 255, 255, 0.8); /* White background with slight transparency */
+            border-radius: 10px; /* Rounded corners */
         }
         .day {
             margin-bottom: 3em;
@@ -42,7 +48,7 @@
         .event {
             padding: 1em;
             border-radius: 10px;
-            background-color: #f0fdfa; /* Very light teal background for each event */
+            background-color: #f0fdfa; /* Light teal for event cards */
             margin-bottom: 1em;
             border: 2px solid #008080; /* Teal border */
             display: flex;
@@ -52,22 +58,22 @@
         }
         .event:hover {
             background-color: #e0f5f5; /* Lighter on hover */
-            transform: scale(1.02);
+            transform: scale(1.02); /* Slight scale effect */
             box-shadow: 0 0 15px rgba(0, 128, 128, 0.3); /* Teal shadow */
         }
         footer {
-            background-color: #008080;
-            color: #ffffff;
+            background-color: #008080; /* Teal footer */
+            color: #ffffff; /* White text */
             text-align: center;
             padding: 1.5em 0;
             margin-top: 2em;
         }
         .emoji {
-            font-size: 1.5em;
+            font-size: 1.5em; /* Emoji size */
             margin-right: 10px;
         }
         .time {
-            font-weight: bold;
+            font-weight: bold; /* Bold time */
         }
 
         /* Animations */
@@ -122,31 +128,31 @@
             <h2>🎊 October 11th, 2024 – The Big Day</h2>
             <div class="event">
                 <span><span class="emoji">🌅</span>Breakfast</span>
-                <span class="time">8:30 AM – 10:00 AM</span> <!-- Updated Timing -->
+                <span class="time">8:30 AM – 10:00 AM</span>
             </div>
             <div class="event">
                 <span><span class="emoji">💍</span>Wedding Ceremony</span>
-                <span class="time">3:30 PM – 5:00 PM</span> <!-- Updated Timing -->
-                <span>Dress Code: Formals:Preferably White & Teal Green / Any comfortable wear </span>
+                <span class="time">3:30 PM – 5:00 PM</span>
+                <span>Dress Code: Traditional Ethnic</span>
             </div>
             <div class="event">
                 <span><span class="emoji">📸</span>Post Wedding Photo Session</span>
-                <span class="time">5:00 PM – 5:30 PM</span> <!-- New Event -->
+                <span class="time">5:00 PM – 5:30 PM</span>
             </div>
             <div class="event">
                 <span><span class="emoji">🎉</span>Reception</span>
-                <span class="time">6:00 PM onwards</span> <!-- Updated Event with Details -->
+                <span class="time">6:00 PM onwards</span>
                 <span>Dress Code: White & Teal Green / Party Wear / Comfortable Wear<br>Location: PALACE GROUNDS - WHITE PETALS, GARDENIA GATE NO: 3</span>
             </div>
             <div class="event">
                 <span><span class="emoji">🍽️</span>Dinner</span>
-                <span class="time">8:00 PM onwards</span> <!-- Updated Timing -->
+                <span class="time">8:00 PM onwards</span>
             </div>
         </section>
     </div>
 
     <footer>
-        Made with ❤️ for the wedding of RHEA & ASHISH | 10th & 11th October 2024
+        Made with ❤️ for the wedding of RHEA  & ASHISH | 10th & 11th October 2024
     </footer>
 </body>
 </html>
