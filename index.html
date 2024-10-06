@@ -6,11 +6,12 @@
     <title>Wedding Itinerary - 10th & 11th October 2024</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             background-color: #ffffff; /* White background */
             color: #333;
             margin: 0;
             padding: 0;
+            overflow-x: hidden;
         }
         header {
             background-color: #008080; /* Teal green header */
@@ -21,9 +22,14 @@
         h1 {
             font-size: 3em;
             margin: 0;
+            animation: slideIn 1.5s ease-in-out;
         }
         h2 {
             color: #006666; /* Dark teal for emphasis */
+            margin-top: 1em;
+            font-size: 2em;
+            text-align: center;
+            animation: fadeIn 2s ease-in;
         }
         .container {
             width: 80%;
@@ -38,21 +44,40 @@
             border-radius: 10px;
             background-color: #f0fdfa; /* Very light teal background for each event */
             margin-bottom: 1em;
-            border: 1px solid #008080; /* Teal border */
+            border: 2px solid #008080; /* Teal border */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: transform 0.2s;
         }
         .event:hover {
             background-color: #e0f5f5; /* Lighter on hover */
-            box-shadow: 0 0 10px rgba(0, 128, 128, 0.1); /* Teal shadow */
+            transform: scale(1.02);
+            box-shadow: 0 0 15px rgba(0, 128, 128, 0.3); /* Teal shadow */
         }
         footer {
             background-color: #008080;
             color: #ffffff;
             text-align: center;
-            padding: 1em 0;
+            padding: 1.5em 0;
+            margin-top: 2em;
         }
         .emoji {
             font-size: 1.5em;
             margin-right: 10px;
+        }
+        .time {
+            font-weight: bold;
+        }
+
+        /* Animations */
+        @keyframes slideIn {
+            from { transform: translateX(-100%); opacity: 0; }
+            to { transform: translateX(0); opacity: 1; }
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
         }
     </style>
 </head>
@@ -66,52 +91,56 @@
         <section class="day">
             <h2>🎉 October 10th, 2024 – Pre-Wedding Celebrations</h2>
             <div class="event">
-                <span class="emoji">🌟</span><strong>Welcome & Check-In</strong><br>
-                8:30 AM – 2:00 PM | YMCA Reception Desk
+                <span><span class="emoji">🌟</span>Welcome & Check-In</span>
+                <span class="time">8:30 AM – 2:00 PM</span>
             </div>
             <div class="event">
-                <span class="emoji">🍽️</span><strong>Lunch</strong><br>
-                1:30 PM – 3:00 PM | YMCA Dining Hall
+                <span><span class="emoji">🍽️</span>Lunch</span>
+                <span class="time">1:30 PM – 3:00 PM</span>
             </div>
             <div class="event">
-                <span class="emoji">🙏</span><strong>Prayer & Worship</strong><br>
-                4:00 PM – 5:00 PM | Dress Code: Yellow & White | YMCA Conference Hall
+                <span><span class="emoji">🙏</span>Prayer & Worship</span>
+                <span class="time">4:00 PM – 5:00 PM</span>
+                <span>Dress Code: Yellow & White</span>
             </div>
             <div class="event">
-                <span class="emoji">☕</span><strong>Tea Break</strong><br>
-                5:15 PM – 5:45 PM | YMCA Dining Hall
+                <span><span class="emoji">☕</span>Tea Break</span>
+                <span class="time">5:15 PM – 5:45 PM</span>
             </div>
             <div class="event">
-                <span class="emoji">💛</span><strong>Bangle Ceremony & Haldi</strong><br>
-                6:00 PM onwards | Dress Code: Yellow & White | YMCA Conference Hall
+                <span><span class="emoji">💛</span>Bangle Ceremony & Haldi</span>
+                <span class="time">6:00 PM onwards</span>
+                <span>Dress Code: Yellow & White</span>
             </div>
             <div class="event">
-                <span class="emoji">🍽️</span><strong>Dinner</strong><br>
-                7:30 PM onwards | YMCA Outside Conference Hall
+                <span><span class="emoji">🍽️</span>Dinner</span>
+                <span class="time">7:30 PM onwards</span>
             </div>
         </section>
 
         <section class="day">
             <h2>🎊 October 11th, 2024 – The Big Day</h2>
             <div class="event">
-                <span class="emoji">🌅</span><strong>Breakfast</strong><br>
-                7:30 AM – 9:00 AM | YMCA Dining Hall
+                <span><span class="emoji">🌅</span>Breakfast</span>
+                <span class="time">7:30 AM – 9:00 AM</span>
             </div>
             <div class="event">
-                <span class="emoji">💍</span><strong>Wedding Ceremony</strong><br>
-                10:00 AM – 12:00 PM | Dress Code: Traditional Ethnic | YMCA Main Hall
+                <span><span class="emoji">💍</span>Wedding Ceremony</span>
+                <span class="time">10:00 AM – 12:00 PM</span>
+                <span>Dress Code: Traditional Ethnic</span>
             </div>
             <div class="event">
-                <span class="emoji">🍽️</span><strong>Lunch</strong><br>
-                1:00 PM – 2:30 PM | YMCA Dining Hall
+                <span><span class="emoji">🍽️</span>Lunch</span>
+                <span class="time">1:00 PM – 2:30 PM</span>
             </div>
             <div class="event">
-                <span class="emoji">🎉</span><strong>Reception</strong><br>
-                5:00 PM onwards | Dress Code: Formal | YMCA Lawn
+                <span><span class="emoji">🎉</span>Reception</span>
+                <span class="time">5:00 PM onwards</span>
+                <span>Dress Code: Formal</span>
             </div>
             <div class="event">
-                <span class="emoji">✨</span><strong>Farewell & Goodnight</strong><br>
-                After Reception | Farewell as we end the celebrations.
+                <span><span class="emoji">✨</span>Farewell & Goodnight</span>
+                <span class="time">After Reception</span>
             </div>
         </section>
     </div>
