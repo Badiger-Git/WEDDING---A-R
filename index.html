@@ -8,47 +8,47 @@
         body {
             font-family: 'Arial', sans-serif;
             background-image: url('background.jpg'); /* Path to your image */
-            background-size: cover; /* Ensure the image covers the entire page */
-            background-position: center; /* Center the image */
-            background-attachment: fixed; /* Keep the image fixed when scrolling */
-            background-repeat: no-repeat; /* Prevent the image from repeating */
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
             color: #333;
             margin: 0;
             padding: 0;
             overflow-x: hidden;
         }
         header {
-            background-color: rgba(0, 128, 128, 0.7); /* Semi-transparent teal over the background */
-            color: #ffffff; /* White text */
+            background-color: rgba(0, 128, 128, 0.7); /* Semi-transparent teal */
+            color: #ffffff;
             text-align: center;
-            padding: 2em 0;
+            padding: 1em 0; /* Reduced padding for mobile */
         }
         h1 {
-            font-size: 3em;
+            font-size: 2.5em; /* Adjusted font size for mobile */
             margin: 0;
             animation: slideIn 1.5s ease-in-out;
         }
         h2 {
-            color: #006666; /* Dark teal for emphasis */
+            color: #006666;
             margin-top: 1em;
-            font-size: 2em;
+            font-size: 1.8em; /* Adjusted font size */
             text-align: center;
             animation: fadeIn 2s ease-in;
         }
         .container {
-            width: 80%;
+            width: 90%; /* Responsive width */
             margin: 0 auto;
-            padding: 2em 0;
-            background-color: rgba(255, 255, 255, 0.8); /* White background with slight transparency */
+            padding: 1em 0; /* Reduced padding */
+            background-color: rgba(255, 255, 255, 0.8);
             border-radius: 10px; /* Rounded corners */
         }
         .day {
-            margin-bottom: 3em;
+            margin-bottom: 2em; /* Adjusted for mobile */
         }
         .event {
             padding: 1em;
             border-radius: 10px;
-            background-color: #f0fdfa; /* Light teal for event cards */
+            background-color: #f0fdfa; /* Light teal */
             margin-bottom: 1em;
             border: 2px solid #008080; /* Teal border */
             display: flex;
@@ -57,15 +57,15 @@
             transition: transform 0.2s;
         }
         .event:hover {
-            background-color: #e0f5f5; /* Lighter on hover */
-            transform: scale(1.02); /* Slight scale effect */
-            box-shadow: 0 0 15px rgba(0, 128, 128, 0.3); /* Teal shadow */
+            background-color: #e0f5f5;
+            transform: scale(1.02);
+            box-shadow: 0 0 15px rgba(0, 128, 128, 0.3);
         }
         footer {
             background-color: #008080; /* Teal footer */
-            color: #ffffff; /* White text */
+            color: #ffffff;
             text-align: center;
-            padding: 1.5em 0;
+            padding: 1em 0; /* Reduced padding for mobile */
             margin-top: 2em;
         }
         .emoji {
@@ -74,6 +74,23 @@
         }
         .time {
             font-weight: bold; /* Bold time */
+        }
+
+        /* Media Queries for Better Mobile Experience */
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2em; /* Smaller heading for mobile */
+            }
+            h2 {
+                font-size: 1.5em; /* Smaller subheading for mobile */
+            }
+            .event {
+                flex-direction: column; /* Stack elements vertically on mobile */
+                align-items: flex-start; /* Align text to the start */
+            }
+            .event span {
+                margin-bottom: 5px; /* Space between lines */
+            }
         }
 
         /* Animations */
